@@ -1,0 +1,15 @@
+@import "base/reset";
+@import "base/typography";
+@import "variables";
+@import "layout/sidebar";
+@import "layout/header";
+@import "layout/main-content";
+@import "base/mixins";
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 4fr;
+    grid-template-rows: 1fr 4fr;
+}
