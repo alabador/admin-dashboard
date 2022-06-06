@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -342,6 +343,10 @@ template {
 }
 
 /*Additional Resets*/
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 ul {
   padding: 0;
 }
@@ -392,6 +397,75 @@ a {
 
 .main-link a, .setting-link a {
   color: white;
+}
+
+.header {
+  background-color: green;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 10px 50px 10px 25px;
+  font-size: 16px;
+}
+
+.utility-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.utility-header .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 60%;
+}
+
+.utility-header .search-container #search {
+  border-radius: 24px;
+  border: none;
+  height: 32px;
+  width: 100%;
+}
+
+.utility-header .profile-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: blue;
 }
 
 .wrapper {

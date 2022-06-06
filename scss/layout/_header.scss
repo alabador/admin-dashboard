@@ -1,0 +1,43 @@
+.header {
+    background-color: green;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px 50px 10px 25px;
+    font-size: 16px;
+}
+
+.utility-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 8rem;
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 60%;
+        #search {
+            border-radius: 24px;
+            border: none;
+            height: 32px;
+            width: 100%;  
+        }
+    }
+    .profile-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: blue;
+}
