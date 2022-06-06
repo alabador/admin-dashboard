@@ -359,8 +359,9 @@ a {
   text-decoration: none;
 }
 
+/*Colors*/
 .sidebar {
-  background-color: #a4a4c7;
+  background-color: #4a7dac;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -400,7 +401,6 @@ a {
 }
 
 .header {
-  background-color: green;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -415,6 +415,9 @@ a {
       grid-template-rows: 1fr 1fr;
   padding: 10px 50px 10px 25px;
   font-size: 16px;
+  background-color: white;
+  -webkit-box-shadow: 0px 7px 8px -4px rgba(107, 107, 107, 0.54);
+          box-shadow: 0px 7px 8px -4px rgba(107, 107, 107, 0.54);
 }
 
 .utility-header {
@@ -445,6 +448,7 @@ a {
   border: none;
   height: 32px;
   width: 100%;
+  background-color: #dddddd;
 }
 
 .utility-header .profile-container {
@@ -461,11 +465,70 @@ a {
   gap: 2rem;
 }
 
+.main-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.main-header .user-info-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.main-header .user-info-container p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.main-header .user-info-container h3 {
+  margin: 0;
+}
+
+.main-header .cta-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 1rem;
+}
+
+.main-header .cta-container button.cta {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 24px;
+  border: none;
+  background-color: #4a7dac;
+  color: white;
+}
+
 .profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-image: url("/assets/bird-nypubliclibrary-unsplash.jpg");
+  background-size: 48px;
+}
+
+.profile-pic-small {
   width: 36px;
   height: 36px;
-  border-radius: 100%;
-  background-color: blue;
+  background-size: 36px;
 }
 
 .wrapper {
