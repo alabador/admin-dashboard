@@ -360,7 +360,7 @@ a {
 }
 
 /*Colors*/
-/*Spacing*/
+/*Sizing*/
 .sidebar {
   background-color: #4a7dac;
   -ms-grid-column: 1;
@@ -577,8 +577,9 @@ a {
   padding: 24px 16px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  height: minmax(100px, 100%);
 }
 
 .project .project-info h4 {
@@ -618,11 +619,20 @@ a {
   gap: 24px;
 }
 
+.news-container .announcements-container, .news-container .trending-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
 .announcements, .trending {
   display: -ms-grid;
   display: grid;
   background-color: white;
   gap: 16px;
+  padding: 32px 24px;
+  border-radius: 8px;
 }
 
 .announcements h4, .trending h4 {
@@ -633,9 +643,18 @@ a {
 
 .announcements p, .trending p {
   font-size: 0.7rem;
-  margin: 0.2rem 0 0 0;
+  margin: 2px 0 0 0;
   font-weight: 400;
   color: #505050;
+}
+
+.announcement {
+  border-bottom: 1px solid #e9ecf0;
+  padding-bottom: 1rem;
+}
+
+.announcement:last-of-type {
+  border: none;
 }
 
 .wrapper {
