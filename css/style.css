@@ -360,6 +360,7 @@ a {
 }
 
 /*Colors*/
+/*Spacing*/
 .sidebar {
   background-color: #4a7dac;
   -ms-grid-column: 1;
@@ -414,10 +415,10 @@ a {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   padding: 10px 50px 10px 25px;
-  font-size: 16px;
   background-color: white;
-  -webkit-box-shadow: 0px 7px 8px -4px rgba(107, 107, 107, 0.54);
-          box-shadow: 0px 7px 8px -4px rgba(107, 107, 107, 0.54);
+  -webkit-box-shadow: 2px 4px 6px -3px rgba(85, 85, 85, 0.329);
+          box-shadow: 2px 4px 6px -3px rgba(85, 85, 85, 0.329);
+  z-index: 1;
 }
 
 .utility-header {
@@ -463,6 +464,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .main-header {
@@ -529,6 +532,110 @@ a {
   width: 36px;
   height: 36px;
   background-size: 36px;
+}
+
+.main-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  padding: 24px;
+  background-color: #e9ecf0;
+  gap: 24px;
+}
+
+.main-content h3 {
+  font-size: 1.2rem;
+}
+
+.projects-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+.projects-container h4, .projects-container p {
+  margin: 0;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (minmax(120px, calc(100%/3)))[3];
+      grid-template-rows: repeat(3, minmax(120px, calc(100%/3)));
+  grid-auto-rows: 1fr;
+  gap: 24px;
+}
+
+.project {
+  background-color: white;
+  border-left: orange 8px solid;
+  border-radius: 8px;
+  padding: 24px 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.project .project-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project .project-info p {
+  color: #505050;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.project .project-actions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 20px;
+}
+
+.news-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+
+.announcements, .trending {
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  gap: 16px;
+}
+
+.announcements h4, .trending h4 {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.announcements p, .trending p {
+  font-size: 0.7rem;
+  margin: 0.2rem 0 0 0;
+  font-weight: 400;
+  color: #505050;
 }
 
 .wrapper {
