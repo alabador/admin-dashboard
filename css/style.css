@@ -529,7 +529,7 @@ a {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-image: url("/assets/bird-nypubliclibrary-unsplash.jpg");
+  background-image: url("../assets/bird-nypubliclibrary-unsplash.jpg");
   background-size: 48px;
 }
 
@@ -662,7 +662,7 @@ a {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-image: url("/assets/bird-nypubliclibrary-unsplash.jpg");
+  background-image: url("../assets/bird-nypubliclibrary-unsplash.jpg");
   background-size: 48px;
 }
 
