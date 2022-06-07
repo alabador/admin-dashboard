@@ -419,6 +419,7 @@ a {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  gap: 16px;
   padding: 10px 50px 10px 25px;
   background-color: white;
   -webkit-box-shadow: 2px 4px 6px -3px rgba(85, 85, 85, 0.329);
@@ -552,6 +553,7 @@ a {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  gap: 16px;
   padding: 10px 50px 10px 25px;
   background-color: white;
   -webkit-box-shadow: 2px 4px 6px -3px rgba(85, 85, 85, 0.329);
