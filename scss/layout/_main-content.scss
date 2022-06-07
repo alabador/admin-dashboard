@@ -65,20 +65,29 @@
 .news-container {
     display: grid;
     grid-column: 2/3;
-    grid-template-rows: 1fr 1fr;
-    gap: $gap;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
 
-    .announcements-container, .trending-container {
-        display: grid;
-        grid-template-rows: auto 1fr;
-    }
+.announcements-container, .trending-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.announcements-container {
+    grid-row: 1/2;
+}
+
+.trending-container {
+    grid-row: 2/3;
 }
 
 .announcements, .trending {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    gap: 16px;
-    padding: 32px 24px;
+    gap: 5%;
+    padding: 10%;
     border-radius: $card-border-radius;
 
     h4 {
@@ -96,7 +105,7 @@
 
 .announcement {
     border-bottom: 1px solid $bg-main-content;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .announcement:last-of-type {
@@ -105,6 +114,7 @@
 
 .trend {
     display: flex;
+    padding-bottom: 1rem;
     h4 {
         font-weight: 500;
     }
@@ -112,4 +122,10 @@
     div.trend-info {
         padding-left: 8px;
     }
+}
+
+.profile-pic-trend {
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
 }
